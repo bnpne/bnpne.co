@@ -44,12 +44,9 @@ module.exports = {
 
     ...mapFolders,
 
-    new CopyWebpackPlugin([
-      {
-        from: "./shared",
-        to: "",
-      },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "./shared", to: "" }],
+    }),
 
     new MiniCssExtractPlugin({
       filename: "[name].[hash].css",
