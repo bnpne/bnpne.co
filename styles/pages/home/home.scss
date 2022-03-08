@@ -1,0 +1,81 @@
+.home {
+  @extend %page;
+
+  // transition: opacity 0.4s ease, visibility 0.4s ease;
+
+  &--active {
+    @extend %page--active;
+  }
+
+  // &:after {
+  //   background: #f0f;
+  //   content: '';
+  //   height: 100%;
+  //   left: 50%;
+  //   position: absolute;
+  //   transform: translateX(-50%);
+  //   width: 1.5rem;
+  // }
+}
+
+.home__wrapper {
+  pointer-events: none;
+  text-align: left;
+  padding-bottom: 10rem;
+
+  @include media("<=phone") {
+    padding: 2.5rem 1rem 0;
+    padding-bottom: 5rem;
+  }
+}
+
+.home__section {
+  padding: 5rem 2.5rem;
+  height: 100%;
+  // height: 90rem;
+  width: 100%;
+
+  @include media("<=phone") {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.home__item {
+  font-size: 4.8rem;
+  line-height: 4.7rem;
+  letter-spacing: -0.02em;
+  font-family: $font-neue-montreal-bold;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include media("<=phone") {
+    font-size: 2rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.02em;
+    font-family: $font-neue-montreal-bold;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.home__list {
+  padding: 4.6rem 0 0 0;
+  display: block;
+
+  a span:hover {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.home__para {
+  max-width: 70%;
+}
+
+.home__info {
+  padding: 4.6rem 0 0 0;
+}

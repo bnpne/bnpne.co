@@ -1,0 +1,11 @@
+.page__intro {
+  background-color: $color-eerie-black;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: z("intro");
+}

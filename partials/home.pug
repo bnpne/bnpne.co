@@ -1,0 +1,45 @@
+
+    
+mixin contact(link, title)
+  li.home__item(data-animation='paragraph')
+    a.home__link(href=link target="_blank" rel="noreferrer noopener") 
+      span=title
+
+mixin media(id) 
+  .media
+    img.media__img
+
+
+section.home
+  .home__wrapper
+    nav.navigation(data-animation='paragraph')
+      ul.navigation__list   
+        li.home__item
+          h1 Ben Paine
+        li.home__item  
+          p Keep Scrolling
+    .home__section
+      h2.home__item.home__para.home__info(data-animation='paragraph')
+        | A Freelance Front-End developer
+        | Living in San Diego, California.
+      p.home__item.offset-1.home__para(data-animation='paragraph')
+        | Ben works with studios and 
+        | ambitious individuals
+        | to bring design, functionality
+        | and creativity to the web. Ben's inspiration 
+        | and style comes from his experience as 
+        | both a graphic designer and web designer.
+      //- h2.home__item.home__para(data-animation='paragraph') 
+      //-   | What I am good at: 
+      p.home__item.offset-1.home__para.home__list(data-animation='paragraph')
+        | html, javascript, typescript, react, next.js,
+        | CSS, SCSS, TailwindCSS, WebGL, CraftCMS, PHP, 
+        | Wordpress, Web3 Dev (Solidity), Figma 
+        | Adobe Creative Suite, Blender. 
+      ul.home__item.home__list.offset-1
+        +contact("mailto:ben@bnpne.co", 'EMAIL: ben@bnpne.co')
+        +contact("https://instagram.com/bnpne", 'INSTA: BNPNE')
+        +contact("https://github.com/bnpne", 'GITHUB: BNPNE')
+        +contact("https://twitter.com/bnpneth", 'TWITTER: @BNPNETH')
+
+

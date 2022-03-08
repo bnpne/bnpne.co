@@ -1,0 +1,146 @@
+$total-width: 192rem;
+$grid-margin: 12rem;
+$grid-gutter: 2rem;
+$grid-cols: 14;
+$grid-col-span: calc(
+  ($total-width - ($grid-margin * 2) - ($grid-gutter * ($grid-cols - 1))) /
+    $grid-cols
+);
+
+@function span($cols, $extra-gutter: 0) {
+  @return $cols * $grid-col-span + ($cols - 1 + $extra-gutter) * $grid-gutter;
+}
+
+.span-1 {
+  width: span(1);
+}
+.span-2 {
+  width: span(2);
+}
+.span-3 {
+  width: span(3);
+}
+.span-4 {
+  width: span(4);
+}
+.span-5 {
+  width: span(5);
+}
+.span-6 {
+  width: span(6);
+}
+.span-7 {
+  width: span(7);
+}
+.span-8 {
+  width: span(8);
+}
+.span-9 {
+  width: span(9);
+}
+.span-10 {
+  width: span(10);
+}
+.span-11 {
+  width: span(11);
+}
+.span-12 {
+  width: span(12);
+}
+.span-13 {
+  width: span(13);
+}
+.span-14 {
+  width: span(14);
+}
+.span-15 {
+  width: span(15);
+}
+.span-16 {
+  width: span(16);
+}
+.span-17 {
+  width: span(17);
+}
+.span-18 {
+  width: span(18);
+}
+.span-19 {
+  width: span(19);
+}
+.span-20 {
+  width: span(20);
+}
+
+.offset-g {
+  margin-left: $grid-gutter;
+}
+.offset-1 {
+  margin-left: span(1, 1);
+}
+.offset-2 {
+  margin-left: span(2, 1);
+}
+.offset-3 {
+  margin-left: span(3, 1);
+}
+.offset-4 {
+  margin-left: span(4, 1);
+}
+.offset-5 {
+  margin-left: span(5, 1);
+}
+.offset-6 {
+  margin-left: span(6, 1);
+}
+.offset-7 {
+  margin-left: span(7, 1);
+}
+.offset-8 {
+  margin-left: span(8, 1);
+}
+.offset-9 {
+  margin-left: span(9, 1);
+}
+.offset-10 {
+  margin-left: span(10, 1);
+}
+.offset-11 {
+  margin-left: span(11, 1);
+}
+.offset-12 {
+  margin-left: span(12, 1);
+}
+.offset-13 {
+  margin-left: span(13, 1);
+}
+.offset-14 {
+  margin-left: span(14, 1);
+}
+.offset-15 {
+  margin-left: span(15, 1);
+}
+.offset-16 {
+  margin-left: span(16, 1);
+}
+.offset-17 {
+  margin-left: span(17, 1);
+}
+.offset-18 {
+  margin-left: span(18, 1);
+}
+.offset-19 {
+  margin-left: span(19, 1);
+}
+.offset-20 {
+  margin-left: span(20, 1);
+}
+
+@include media("<=phone") {
+  .offset-1 {
+    margin-left: 6rem;
+  }
+  .offset-2 {
+    margin-left: 6rem;
+  }
+}
