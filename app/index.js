@@ -27,9 +27,7 @@ class App {
 
     AutoBind(this);
 
-    if (!Detection.isMobile()) {
-      this.createCanvas();
-    }
+    this.createCanvas();
 
     // this.createCase();
     this.createHome();
